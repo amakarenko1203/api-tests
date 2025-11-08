@@ -21,7 +21,7 @@ export default defineConfig({
   },
   
   use: {
-    baseURL: process.env.BASE_URL || 'https://automationexercise.com/api',
+    baseURL: process.env.BASE_URL || 'https://automationexercise.com',
     extraHTTPHeaders: {
       'Accept': 'application/json',
     },

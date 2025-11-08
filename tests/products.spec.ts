@@ -4,7 +4,7 @@ import { GetAllProductsListResponseSchema } from '../schemas/products.schema';
 test.describe('Get All Products List API', () => {
   
   test('should return all products with valid schema', async ({ request }) => {
-    const response = await request.get('/productsList');
+    const response = await request.get('/api/productsList');
     
     expect(response.status()).toBe(200);
     
