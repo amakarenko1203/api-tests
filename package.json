@@ -1,0 +1,23 @@
+{
+  "name": "api-tests",
+  "version": "1.0.0",
+  "description": "API testing framework using Playwright, TypeScript, Zod, and Faker",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
+  },
+  "keywords": ["playwright", "api", "testing", "typescript", "zod"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.5",
+    "dotenv": "^16.3.1",
+    "typescript": "^5.3.3",
+    "zod": "^3.22.4"
+  }
+}
