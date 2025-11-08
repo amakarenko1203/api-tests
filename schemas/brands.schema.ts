@@ -9,3 +9,8 @@ export const GetAllBrandsListResponseSchema = z.object({
   responseCode: z.number(),
   brands: z.array(BrandSchema)
 });
+
+export const MethodNotSupportedResponseSchema = z.object({
+  responseCode: z.number(),
+  message: z.string()
+});
