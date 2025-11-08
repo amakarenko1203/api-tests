@@ -20,6 +20,12 @@ export const GetAllProductsListResponseSchema = z.object({
   products: z.array(ProductSchema)
 });
 
+export const MethodNotSupportedResponseSchema = z.object({
+  responseCode: z.number(),
+  message: z.string()
+});
+
 export type ProductCategory = z.infer<typeof ProductCategorySchema>;
 export type Product = z.infer<typeof ProductSchema>;
 export type GetAllProductsListResponse = z.infer<typeof GetAllProductsListResponseSchema>;
+export type MethodNotSupportedResponse = z.infer<typeof MethodNotSupportedResponseSchema>;
